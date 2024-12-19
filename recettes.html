@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Recettes de cuisine</title>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+<header>
+<header class="navbar">   
+<div class="logo">
+    <a href="#"><img src="./img/logo1.jpg" alt="logo"></a>
+</div>
+<ul class="nav-links">
+    <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#recettes">Recettes</a></li>
+</ul>
+</header>
+
+<!---contenue de la page--->
+<div class="container">
+
+    <div class="recipe" id="recipe1">
+        <h2>Spaghetti Bolognese</h2>
+        <p>Une recette classique italienne avec une sauce riche en viande.</p>
+        <button onclick="showRecipeDetails('recipe1')">Voir plus</button>
+    </div>
+
+    <div class="recipe" id="recipe2">
+        <h2>Spaghetti Bolognese</h2>
+        <p>Une recette classique italienne avec une sauce riche en viande.</p>
+        <button onclick="showRecipeDetails('recipe2')">Voir plus</button>
+    </div>
+
+    <div class="recipe" id="recipe3">
+        <h2>Crêpes Suzette</h2>
+        <p>Une délicieuse recette française avec une sauce à l'orange.</p>
+        <button onclick="showRecipeDetails('recipe3')">Voir plus</button>
+    </div>
+
+    <div class="recipe" id="recipe4">
+        <h2>Fondant aux chocolat</h2>
+        <p>Une délicieuse recette du dessert au chocolat, qui raviverons vos papilles.</p>
+        <button onclick="showRecipeDetails('recipe4')">Voir plus</button>
+    </div>
+</div>
+
+<script>
+    function showRecipeDetails(recipeId) {
+        const recipes = {
+            recipe1: {
+                title: "Spaghetti Bolognese",
+                ingredients: [
+                    "200g de spaghetti (ou celle qui vous convient)",
+                    "150g de boeuf haché",
+                    "1 oignon",
+                    "2 gousses d'ail",
+                    "400g de tomates concassées",
+                    "Basilic, sel, poivre"
+                ],
+                steps: [
+                    "Faire cuire les spaghetti selon les instructions ( selon le choix du paquets de pâtes).",
+                    "Faire revenir l'oignon et l'ail dans une poêle.",
+                    "Ajouter le boeuf haché et cuire jusqu'à ce qu'il soit doré.",
+                    "Ajouter les tomates concassées et laisser mijoter.",
+                    "Servir la sauce sur les spaghetti."
+                ]
+            },
+            
+            recipe2: {
+                title: "Risotto aux champignons",
+                ingredients: [
+                    "250 g de riz arborio.",
+                    "200 g de champignons de Paris.",
+                    "1 oignon.",
+                    "1 cuil. à soupe d'huile d'olive.",
+                    "1 litre de bouillon de légumes.",
+                    "50 g de parmesan râpé.",
+                    "1 verre de vin blanc sec.",
+                    "20 g de beurre.",
+                    "Sel, poivre."
+                ],
+                steps: [
+                    "Émincer l'oignon et les champignons.",
+                    "Dans une grande poêle, chauffer l'huile d'olive et y faire revenir l'oignon jusqu'à ce qu'il soit translucide.",
+                    "Ajouter les champignons et faire cuire jusqu'à ce qu'ils rendent leur eau.",
+                    "Ajouter le riz et le faire cuire 2 minutes en remuant.",
+                    "Verser le vin blanc et laisser évaporer.",
+                    "Ajouter le bouillon chaud, louche par louche, en remuant jusqu'à ce que le riz soit cuit (environ 18 minutes).",
+                    "En fin de cuisson, incorporer le beurre et le parmesan râpé. Assaisonner à votre goût.",
+                ]
+                },
+
+            recipe3: {
+                title: "Crêpes Suzette",
+                ingredients: [
+                    "125g de farine",
+                    "2 oeufs",
+                    "300ml de lait",
+                    "50g de beurre",
+                    "Jus et zeste d'orange",
+                    "Sucre, Grand Marnier"
+                ],
+                steps: [
+                    "Préparer la pâte à crêpes et laisser reposer.",
+                    "Cuire les crêpes dans une poêle chaude.",
+                    "Préparer la sauce avec le jus d'orange, le beurre et le sucre.",
+                    "Flamber avec le Grand Marnier et servir avec les crêpes."
+                ]
+            },
+
+            recipe4: {
+                title: "Fondant aux chaocolat",
+                ingredients: [
+                    "200 g de chocolat noir pâtissier.",
+                    "100 g de beurre (plus un peu pour le moule).",
+                    "3 œufs.",
+                    "100 g de sucre en poudre",
+                    "50 g de farine",
+                    "Une pincée de sel"
+                ],
+                steps: [
+                    "Préchauffez le four à 180°C (th. 6). Beurrez et farinez un moule à gâteau (ou utilisez du papier sulfurisé).",
+                    "Faites fondre le chocolat avec le beurre, le chocolat en morceaux et faites-le fondre au bain-marie ou au micro-ondes (par sessions de 30 secondes pour éviter qu'il ne brûle)",
+                    "Mélangez pour obtenir une texture lisse et homogène.",
+                    "Mélangez les œufs et le sucre dans un saladier, battez les œufs avec le sucre jusquà ce que le mélange blanchisse.",
+                    "Ajoutez la farine: incorporez la farine tamisée au mélange œufs-sucre, puis ajoutez une pincée de sel.",
+                    "Incorporez le chocolat fondu: versez le chocolat et le beurre fondus dans le mélange précédent et remuez délicatement jusquà obtenir une pâte homogène.",
+                    "Versez dans le moule: transvasez la pâte dans le moule beurré et fariné.",
+                    "Cuisez au four: faites cuire pendant 10 à 12 minutes selon votre four. Le centre doit rester légèrement fondant.",
+                    "Laissez tiédir avant de servir: sortez le fondant du four et laissez-le reposer 5 minutes avant de démouler."
+                ]
+            }
+
+        };
+
+        const recipe = recipes[recipeId];
+        if (recipe) {
+            alert(`Recette: ${recipe.title}\n\nIngrédients:\n- ${recipe.ingredients.join('\n- ')}\n\nÉtapes:\n- ${recipe.steps.join('\n- ')}`);
+        } else {
+            alert("Recette non trouvée.");
+        }
+    }
+</script>
+    <h2 id="Publierunerecette">Publier une recette</h2>
+        <form action="/submit-recipe" method="POST" enctype="multipart/form-data">
+
+    <!-- Nom de la recette -->
+        <label for="recipe-name">Nom de la recette :</label>
+        <input type="text" id="recipe-name" name="recipe-name" placeholder="Entrez le nom de la recette" required>
+
+    <!-- Description -->
+        <label for="description">Description :</label>
+        <textarea id="description" name="description" placeholder="Décrivez brièvement votre recette" rows="4" required></textarea>
+
+    <!-- Ingrédients -->
+        <label for="ingredients">Ingrédients :</label>
+        <textarea id="ingredients" name="ingredients" placeholder="Listez les ingrédients (un par ligne)" rows="6" required></textarea>
+
+    <!-- Étapes -->
+        <label for="steps">Étapes :</label>
+        <textarea id="steps" name="steps" placeholder="Décrivez les étapes de préparation" rows="8" required></textarea>
+
+    <!-- Image -->
+    <label for="image">Image de la recette :</label>
+    <input type="file" id="image" name="image" accept="image/*">
+
+    <!-- Bouton de soumission -->
+    <button type="submit">Publier la recette</button>
+
+</form>
+</body>
+</html>

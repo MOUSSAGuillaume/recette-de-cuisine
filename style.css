@@ -1,0 +1,169 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0;
+    background-color: #f8f8f8;
+
+        background-image: url(./img/imgprincipale.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+
+}
+
+/* Navbar */
+.navbar {
+display: flex;
+justify-content: space-between;
+    align-items: center;
+      
+background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.logo a {
+color: white;
+text-decoration: none;  
+font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+display: flex; 
+list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+text-decoration: none;  
+font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {  
+color: #00bcd4;
+}
+
+/* Burger menu (mobile) */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    }
+
+    .burger .line {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 3px;
+
+    }
+        font-family: arial, sans-serif,
+        margin: 0,
+        padding: 0,
+        background-color:blue;
+header {
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.recipe {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+.recipe h2 {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.87);
+}
+.recipe p {
+    margin: 5px 0;
+    color: rgba(255, 255, 255, 0.795);
+}
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100;
+}
+button:hover {
+    background-color: #218838;}
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+            top: 60px;
+            right: 0;
+    width: 100%;
+        }
+    
+    .nav-links.active {
+    display: flex;
+        } 
+
+    .burger {
+    display: flex;
+        }
+}
+form {
+    max-width: 600px;
+    margin: auto;
+    background: none;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5) ;
+}
+#Publierunerecette {
+    text-align: center;
+}
+p{
+        font-family: "Molle", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 1.5em;
+        text-align: center;
+      }
+      h1{
+        text-align: center;
+        font-size: ;
+      }
+      h2{
+        text-align: center;
+      }
